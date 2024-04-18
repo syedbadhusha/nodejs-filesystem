@@ -4,7 +4,7 @@ const path = require('path')
 const app = express();
 app.listen(3000);
 
-app.get('/',(req,res)=>
+app.get('/files',(req,res)=>
 {
     fs.readdir("C:\\MYDATA\\Cources\\GUVI MERN", (err,files) => {
         if (err) throw err;
